@@ -3,13 +3,20 @@ import React, { useState } from "react";
 import './addTask.css';
 import ButtonAddTask from "./Button";
 
-const AddTask = () => {
+const AddTask = ({handleTaskAddition}) => {
 
     const [ inputData, setInputData] = useState("")
 
 
     const handleInputChange = (e) =>  {
-         setInputData(e.target.value)    }
+         setInputData(e.target.value)   
+         }
+
+
+         
+    const handleAddTaskClick = () => {
+        handleTaskAddition(inputData)
+    }
 
     return(
 
@@ -23,8 +30,7 @@ const AddTask = () => {
 
         <div className="add-task-button-container">
 
-
-        <ButtonAddTask> 
+        <ButtonAddTask onClick={handleAddTaskClick}> 
             Adicionar
         </ButtonAddTask> 
 
