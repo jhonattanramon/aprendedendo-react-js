@@ -1,51 +1,25 @@
-import React, { useState } from "react";
-import './app.css' 
-import Tasks  from "./components/taks";
-import AddTask from "./components/addTask";
+import React from "react";
+
+import Button from "./components/Button"
 
 const App = () => {
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      title: 'estudar programação',
-      completed: false,
-    },
 
-    {
-      id: 2,
-      title:'ler livros',
-      completed: true,
-    },
-  ]);
+  return(
 
+    <> 
+    
 
-  const handleTaskAddition = (taskTitle) => {
+    <div>
+      
+      <Button button terms = "Terms & Conditions"></Button>
+      <Button join = "join Now"> </Button>
 
-    const newTask = [
-      ...tasks,
-      {
-        title: taskTitle,
-        id: Math.random(10),
-        completed: false
-      }
-    ];
+    </div>
 
-    setTasks(newTask)
-  }
+    </>
+  )
+}
+
+export default App;
 
 
-  return( 
-  <>
-    <div className="container">
-
-      <AddTask handleTaskAddition={handleTaskAddition}/>
-    <Tasks tasks={tasks}/>
-   
-     </div>
-
-  </>
-)
-
-};
-
-export default App

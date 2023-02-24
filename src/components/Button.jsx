@@ -1,15 +1,13 @@
 import React from "react";
 
-import './Button.css'
+import "./Button.css"
 
-
-const ButtonAddTask = ({children, onClick}) => {
-    return (
-
-        <> 
-        <button onClick={onClick} className="add-task-button">{children}</button>
-        </>
-      );
+const Button = (props) => {
+        return(
+            <> 
+                <button className="button"> `{props.tipo1}`</button>
+            </>
+        )
 }
- 
-export default ButtonAddTask;
+
+export default Button;
