@@ -2,10 +2,12 @@ import React from "react";
 
 import "./Button.css"
 
-const Button = (props) => {
+const Button = ({Children}) => {
         return(
             <> 
-                <button className="button"> `{props.tipo1}`</button>
+                <button className="button"> 
+                {Children}
+                </button>
             </>
         )
 }

@@ -1,21 +1,15 @@
 import React from "react";
 
-import Button from "./components/Button"
+import Card from "./components/Card";
+
 
 const App = () => {
 
   return(
 
     <> 
-    
-
-    <div>
+      <Card />
       
-      <Button button terms = "Terms & Conditions"></Button>
-      <Button join = "join Now"> </Button>
-
-    </div>
-
     </>
   )
 }
