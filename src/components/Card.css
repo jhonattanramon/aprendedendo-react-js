@@ -1,0 +1,9 @@
+.container-card{
+    width: 400px;
+    background-color: rgb(240, 240, 240);
+}
+
+.button-card{
+    border-radius: 10px;
+    border: red;
+}

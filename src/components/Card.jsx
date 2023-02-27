@@ -2,21 +2,30 @@ import React from "react";
 
 import Button from "./Button";
 
-const Card = () => {
+import "./Card.css"
 
-    
-        //const [inputData, setInputData] = useState('')
-        
-        const handleInputChange = (e) => {
-                console.log(e);
-        }
+const Card = () => {   
+
     
 
     return(
 
-        <div>
-            <input onChange={handleInputChange} className="" type="text" />
-            <Button> test</Button>
+        <div className="container-card">
+            <div>
+                <img src="" alt="" />
+            </div>
+
+            <div>
+                <h2>test</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, culpa perferendis? Dicta eum ad culpa vitae dolor, ex minus ipsa adipisci magni esse atque. Totam minima soluta accusantium distinctio magnam? 
+                </p>
+
+            </div>
+
+            
+            <Button>terms & coditions</Button>
+            <Button> Join Now </Button>
             
             
         </div>
