@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from "./Button"
+
 const Card = () => {
 
     return(
@@ -7,9 +9,9 @@ const Card = () => {
         <>
 
         <div>
-            <img src="" alt="" />
-            <h1> </h1>
-            <p></p>
+            
+            
+            
             
         </div>
         
