@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card from "./components/Card";
+import ContainerPagamento from "./components/pagamento/ContainerPagamento";
 
 
 const App = () => {
@@ -10,9 +10,8 @@ const App = () => {
 
     <> 
 
-
-      <Card />
-
+    <ContainerPagamento />
+   
 
     </>
   )
