@@ -2,7 +2,9 @@ import React from "react"
 import Input from "./Input";
 import Label from "./Label";
 import Lista from "./ListaDeinformacoesDepagemento";
+import Button from "./Button";
 
+import './containerPagmento.css'
 
 const ContainerPagamento = () => {
     
@@ -12,12 +14,12 @@ const ContainerPagamento = () => {
 
         <div className="containerPagamento">
             
-            <div>
+            <div className="DivPrenchimentoParaCartao">
 
             <div> <h2>Cartão de crédito</h2></div>
             <div>
                 <div>
-                <Label nome="Núnero" />
+                <Label nome="Número" />
                  </div>
                 
                 <div>
@@ -36,13 +38,13 @@ const ContainerPagamento = () => {
 
             </div>
 
-            <div>
+            <div className="divAlight">
                 <span>
                     <div>
                 <Label nome="Data de validade"></Label>
                     </div>
                     <div>
-                <Input type="date"></Input>
+                <Input type="number"></Input>
                     </div>
                 </span>
 
@@ -61,8 +63,10 @@ const ContainerPagamento = () => {
             </div>
 
 
-            <div>
+            <div className="divLista">
                 <Lista />
+                <Button name = "Finalizar pedido" /> 
+                
             </div>
         </div>
     </>
