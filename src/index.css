@@ -11,11 +11,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-background: #222;
-
-font-size: 12pt; 
+  background: #eee;
+  font-size: 12pt; 
   display: flex;
   justify-content: center;
+  
 }
 
 code {

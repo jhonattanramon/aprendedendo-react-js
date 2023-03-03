@@ -1,9 +1,10 @@
 import React from "react";
 
-const Label = ( {appendChild} ) => {
+const Label = ( props ) => {
 
-    return <label htmlFor="">{appendChild}</label>
-
+    return (
+    <label  htmlFor=""> {props.nome}</label>
+    )
 };
 
 export default Label;

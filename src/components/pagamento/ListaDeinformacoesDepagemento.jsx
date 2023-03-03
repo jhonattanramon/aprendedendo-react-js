@@ -8,6 +8,7 @@ const Lista = () =>{
         <>
         <ul>
         <Item name = "Produtos:" valor = {600.00}/>
+        
         </ul>
         </>
     )
