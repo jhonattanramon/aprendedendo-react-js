@@ -1,0 +1,15 @@
+.backgroud{
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+
+.buttonSolicitar{
+    background: chartreuse;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+

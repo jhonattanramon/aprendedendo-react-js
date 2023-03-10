@@ -1,17 +1,13 @@
 import React from "react";
 
-import Form from "./components/Form";
+import ContainerSimulacao from "./components/containerDeSimulacao";
 
 const App = () => {
-
- 
-
-  
   return(
 
     <> 
-      <Form></Form>
       
+      <ContainerSimulacao />
       
     </>
   )
