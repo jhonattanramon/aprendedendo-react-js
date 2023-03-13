@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./TelaDeResultado.css"
 
-const TelaDeResultado = () => {
+const TelaDeResultado = ({numeroDePercelas, garantia, emprestimo}) => {
 
+    const [juros, setJuros] = useState()
+
+    const CalcularNumeroDeParcela = () => {
+        const porcentagemDeParcelaMensal = 0.84
+        
+        setJuros(numeroDePercelas * porcentagemDeParcelaMensal)
+        
+    }
+
+    CalcularNumeroDeParcela()
 
     return(
         <> 
@@ -14,9 +24,9 @@ const TelaDeResultado = () => {
 
                 <div>
                     <div>Total a pagar</div>
-                    <div>R$ <span></span></div>
+                    <div>R$ <span>{juros}</span></div>
 
-                    <div>Taxa de Jutos(mês)</div>
+                    <div>Taxa de juros(mês)</div>
                     <div></div>
                 </div>
 

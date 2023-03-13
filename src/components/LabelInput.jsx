@@ -2,7 +2,7 @@ import React from "react";
 
 import "./styleLabel.css"
 
-const LabelInput = ({type, name}) =>{
+const LabelInput = ({type, name, value, setProps}) =>{
 
     return(
         <>
@@ -12,7 +12,20 @@ const LabelInput = ({type, name}) =>{
             </div>
 
             <div>
-            <input className="inputLabel" type={type} />
+            <input  className="inputLabel" value={value} type={type} onChange={ (e) => {
+                
+                if(setProps !== undefined){
+
+                const stateSetGarantia = setProps
+
+                stateSetGarantia(e.target.value)
+                }
+                
+                
+                
+                
+                
+            }}/>
             </div>
         </div>
         </>
